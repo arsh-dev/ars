@@ -77,6 +77,31 @@
           font-size: 3.5rem;
         }
       }
+      span:before{ content: ''; animation: animate infinite 3s;  }
+      @keyframes animate{
+      	0%{
+      		content: 'Full stack Web Developer';
+      		color: green;
+      		font-size: 30px;
+
+      	}
+      	33%{
+      		content: 'Python Programmer';
+      		color: blue;
+      		font-size: 29px;
+      	}
+      	66%{
+      		content: 'Digital music creator';
+      		color: red;
+      		font-size: 28px;
+      	}
+      	100%{
+      		content: 'Percussionist';
+      		color: slateblue;
+      		font-size: 27px;
+      	}
+
+      }
     </style>
     <!-- Custom styles for this template -->
     <link href="jumbotron.css" rel="stylesheet" />
@@ -153,9 +178,9 @@
         <div class="container">
           <img src="profile.jpg" class="rounded-circle float-left" alt="Ayush Raj Sharma" height="250px" width="250px" style="margin-right: 20px;">  
           <h1 class="display-3">I'm Ayush Raj Sharma!</h1>
-          <p>
+          <p style="font-size: 25px;">
             Hello and Welcome to my Portfolio!<br>
-            I am a full stack Web Developer, Python Programmer and Music Designer.
+            I am a <span></span>
           </p>
           <p>
             <a class="btn btn-primary btn-lg" href="Ayushrajsharma.pdf" role="button" download
